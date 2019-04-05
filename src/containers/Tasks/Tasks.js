@@ -35,6 +35,7 @@ class Tasks extends Component {
     }else{
       tasks = this.props.task.map(task => <Task key={task.id} name={task.username} email={task.email} text={task.text}/>)
     }
+    console.log(this.props.task)
     return (
       <Wrap>
         <div className={classes.Container}>

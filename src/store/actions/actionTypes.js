@@ -8,4 +8,11 @@ export const ADD_START = 'ADD_START'
 export const ADD_SUCCESS = 'ADD_SUCCESS';
 export const ADD_FAILED = 'ADD_FAILED';
 
+export const EDIT_DATA_START = 'ADD_START'
+export const EDIT_DATA_SUCCESS = 'ADD_SUCCESS';
+export const AEDIT_DATA_FAILED = 'ADD_FAILED';
+
+export const AUTH = 'AUTH';
+export const LOGOUT = 'LOGOUT';
+
 
