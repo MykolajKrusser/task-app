@@ -3,7 +3,7 @@ import * as actionsType from '../actions/actionTypes';
 const initialState = {
   login: '',
   password: '',
-  isAuth: true
+  isAuth: false
 }
 
 const reducer = (state=initialState, action)=>{
