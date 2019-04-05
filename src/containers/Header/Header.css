@@ -1,0 +1,21 @@
+.Header{
+    height: 75px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(138, 160, 185, 0.74);
+    color: white;
+    padding: 0 25px;
+    box-sizing: border-box;
+    align-items: center;
+    transition: all 2s ease-in;
+}
+
+.Modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}

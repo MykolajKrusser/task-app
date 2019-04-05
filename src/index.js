@@ -3,5 +3,28 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import {Provider} from 'react-redux';
+import {createStore, applyMiddleware, compose, combineReducers} from 'redux';
+import thunk from 'redux-thunk';
 
+import data from './store/reducers/data';
+
+const composeEnhancers = process.env.NODE_ENV === 'development' ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ : null || compose;
+
+const rootReducers = combineReducers({
+  data: data
+})
+
+const stateStore = createStore(rootReducers, composeEnhancers(
+  applyMiddleware(thunk)
+));
+
+
+const app = (
+  <Provider store={stateStore}>
+    <App />
+  </Provider>
+);
+
+
+ReactDOM.render(app, document.getElementById('root'));
