@@ -3,10 +3,9 @@
   flex-direction: column;
   justify-content: center;
   text-align: left;
-  height: 150px;
+  height: 290px;
   margin: 20px;
   min-width: 250px;
   padding: 20px;
-
   background-color: rgba(109, 106, 106, 0.466);
 }

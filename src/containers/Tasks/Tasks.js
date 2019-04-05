@@ -3,7 +3,7 @@ import classes from './Tasks.css';
 
 import Pagination from "react-js-pagination";
 
-import Task from '../../components/Task/Task';
+import Task from './Task/Task';
 
 import {connect} from 'react-redux';
 import * as action from '../../store/actions/index';
@@ -33,9 +33,8 @@ class Tasks extends Component {
     if(this.props.loader){
       tasks = <Loader/>;
     }else{
-      tasks = this.props.task.map(task => <Task key={task.id} name={task.username} email={task.email} text={task.text}/>)
+      tasks = this.props.task.map(task => <Task key={task.id} name={task.username} email={task.email} text={task.text} status={task.status} id={task.id}/>)
     }
-    console.log(this.props.task)
     return (
       <Wrap>
         <div className={classes.Container}>

@@ -5,7 +5,9 @@ const initialState = {
     totalTaskCount: null,
     loader: true,
     error:false,
-    sortBy: null
+    sortBy: null,
+    status: null,
+    page: null
 }
 
 const reducer = (state=initialState, action)=>{
@@ -17,6 +19,7 @@ const reducer = (state=initialState, action)=>{
                 data: newData.data.message.tasks,
                 totalTaskCount: newData.data.message.total_task_count,
                 sortBy: action.sort,
+                page: action.page,
                 loader: false,
                 error: false,
             };
