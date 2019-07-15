@@ -1,4 +1,4 @@
-<a href="http://mykolajkrusser.zzz.com.ua/">see online</a>
+
 
 ## Project setup
 ```
